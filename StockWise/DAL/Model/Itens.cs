@@ -15,6 +15,7 @@ namespace DAL.Model
         public DateTime DataAquisicao { get; set; }
         public string NumeroDeSerie { get; set; }
         public string VidaUtil { get;set; }
+        public int IdadeItem { get; set; }
         public double ValorDeCompra { get; set; }
         public string Categoria { get; set; }
         public string Setor { get;set; }
