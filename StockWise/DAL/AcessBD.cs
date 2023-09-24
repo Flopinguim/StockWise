@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient; //ADO.NET - > SQL SERVER
 
-namespace DAL.Persistence
+namespace DAL
 {
-    public class Conexao
+    public class AcessBD
     {
         //Atributos:
         protected SqlConnection Con;
@@ -26,7 +26,7 @@ namespace DAL.Persistence
             {
                 throw new Exception(ex.Message);
             }
-        } 
+        }
 
         //Método - Fechar Conexao
         protected void FecharConexao()

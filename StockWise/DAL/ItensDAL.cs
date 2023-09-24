@@ -3,7 +3,7 @@ using System.Data.SqlClient; //Biblioteca de acesso ao SQL SERVER
 
 namespace DAL.Persistence
 {
-    public class ItensDAL : Conexao
+    public class ItensDAL : AcessBD
     {
         Itens itens = null;
         List<Itens> listItens = new List<Itens>();
