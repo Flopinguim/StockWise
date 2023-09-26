@@ -18,7 +18,7 @@ namespace DAL.Model
         public int IdadeItem { get; set; }
         public double ValorDeCompra { get; set; }
         public string Categoria { get; set; }
-        public string Setor { get;set; }
+        public string Setores { get; set; }
         public bool Inativo { get; set; }
 
     }

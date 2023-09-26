@@ -43,22 +43,58 @@
                         <!--Menu Titles-->
                         <TextBlock Text="Flopinguim" Foreground="White" FontSize="22" FontWeight="SemiBold"
                                    DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
-                        <TextBlock Text="Developer, junior" Foreground="#d0bfff" FontSize="14" FontWeight="SemiBold"
+                        <TextBlock Text="Developer, junior" Foreground="White" FontSize="14" FontWeight="SemiBold"
                                    DockPanel.Dock="Top" TextAlignment="Center"/>
-                        <!--Menu Sprator-->
-                        <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
+                        <!--Menu Seprator-->
+                        <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="White"/>
                         
                         <!--Menu Buttons-->
                         <StackPanel DockPanel.Dock="Top">
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton}"  Foreground="White">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource}"/>
+                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menubuttonIcon}"/>
                                     <TextBlock Text="Dashboard"/>
                                 </StackPanel>
                             </Button>
                         </StackPanel>
-                        
-                        
+
+                        <StackPanel DockPanel.Dock="Top">
+                            <Button Style="{StaticResource menuButton}" Foreground="White">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="Package" Style="{StaticResource menubuttonIcon}"/>
+                                    <TextBlock Text="Inventory"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+
+                        <StackPanel DockPanel.Dock="Top">
+                            <Button Style="{StaticResource menuButton}" Foreground="White">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="AccountGroup" Style="{StaticResource menubuttonIcon}"/>
+                                    <TextBlock Text="Departaments"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+
+                        <StackPanel DockPanel.Dock="Top">
+                            <Button Style="{StaticResource menuButton}" Foreground="White">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="TagMultiple" Style="{StaticResource menubuttonIcon}"/>
+                                    <TextBlock Text="Categories"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+
+                        <StackPanel DockPanel.Dock="Top">
+                            <Button Style="{StaticResource menuButton}" Foreground="White">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="Cat" Style="{StaticResource menubuttonIcon}"/>
+                                    <TextBlock Text="IDK"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+
+
                     </DockPanel>
                 </Border>
             </Grid>
