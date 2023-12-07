@@ -9,7 +9,7 @@ namespace DAL.Persistence
         List<Itens> listItens = new List<Itens>();
 
         //Métodos para gravar dados: INSERT:
-        public void Save(Itens obj)
+        public void saveItem(Itens obj)
         {
             try
             {
@@ -25,7 +25,7 @@ namespace DAL.Persistence
                 Cmd.Parameters.AddWithValue("@IdadeItem", obj.IdadeItem);
                 Cmd.Parameters.AddWithValue("@ValorCompra", obj.ValorDeCompra);
                 Cmd.Parameters.AddWithValue("@Categoria", obj.Categoria);
-                Cmd.Parameters.AddWithValue("@Setor", obj.Setor);
+                Cmd.Parameters.AddWithValue("@Setor", obj.Setores);
                 Cmd.Parameters.AddWithValue("@Inativo", obj.Inativo);
 
                 Cmd.ExecuteNonQuery();
@@ -41,7 +41,7 @@ namespace DAL.Persistence
         }
 
         //Método para atualizar dados: UPDATE:
-        public void Update(Itens obj)
+        public void updateItem(Itens obj)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace DAL.Persistence
                 Cmd.Parameters.AddWithValue("@IdadeItem", obj.IdadeItem);
                 Cmd.Parameters.AddWithValue("@ValorCompra", obj.ValorDeCompra);
                 Cmd.Parameters.AddWithValue("@Categoria", obj.Categoria);
-                Cmd.Parameters.AddWithValue("@Setor", obj.Setor);
+                Cmd.Parameters.AddWithValue("@Setor", obj.Setores);
                 Cmd.Parameters.AddWithValue("@Inativo", obj.Inativo);
                 Cmd.Parameters.AddWithValue("@Codigo", obj.Codigo);
 
@@ -74,7 +74,7 @@ namespace DAL.Persistence
         }
 
         //Método para deletar dados: Delete:
-        public void Delete(int codigo)
+        public void deleteItem(int codigo)
         {
             try
             {
@@ -120,7 +120,7 @@ namespace DAL.Persistence
                 itens.IdadeItem = Convert.ToInt32(Dr["IdadeItem"]);
                 itens.ValorDeCompra = Convert.ToDouble(Dr["ValorCompra"]);
                 itens.Categoria = Convert.ToString(Dr["Categoria"]);
-                itens.Setor = Convert.ToString(Dr["Setor"]);
+                itens.Setores = Convert.ToString(Dr["Setor"]);
                 itens.Inativo = Convert.ToBoolean(Dr["Inativo"]);
 
                 return itens;
@@ -157,7 +157,7 @@ namespace DAL.Persistence
                     itens.IdadeItem = Convert.ToInt32(Dr["IdadeItem"]);
                     itens.ValorDeCompra = Convert.ToDouble(Dr["ValorCompra"]);
                     itens.Categoria = Convert.ToString(Dr["Categoria"]);
-                    itens.Setor = Convert.ToString(Dr["Setor"]);
+                    itens.Setores = Convert.ToString(Dr["Setor"]);
                     itens.Inativo = Convert.ToBoolean(Dr["Inativo"]);
 
                     listItens.Add(itens);
