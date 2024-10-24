@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StockWise.Domain.Models
+﻿namespace StockWise.Domain.Models
 {
-    public class PedidoServico
+    public class PedidoServico : Pedido
     {
-        public int ProdutoId { get; set; }
-        public Produto Produto { get; set; }
-        public int Quantidade { get; set; }
+        public int IdPedidoServico { get; set; }
+        public int IdServico { get; set; }
+        public Servico Servico { get; set; }
+        public int IdFornecedor { get; set; }
+        public Fornecedor Fornecedor { get; set; }
+        public string Observacao { get; set; }
     }
 }

@@ -1,14 +1,10 @@
 ﻿namespace StockWise.Domain.Models
 {
-    public class PedidoProduto
+    public class PedidoProduto : Pedido
     {
-        public int Id { get; set; }
-        public int DepartamentoId { get; set; }
-        public Departamento Departamento { get; set; }
-        public int UsuarioSolicitanteId { get; set; }
-        public Usuario UsuarioSolicitante { get; set; }
-        public DateTime DataCadastro { get; set; }
-        public int? OrdemCompraId { get; set; }
-        public OrdemCompra OrdemCompra { get; set; }
+        public int IdPedidoProduto { get; set; }
+        public int IdProduto { get; set; }
+        public Produto Produto { get; set; }
+        public int Quantidade { get; set; }
     }
 }

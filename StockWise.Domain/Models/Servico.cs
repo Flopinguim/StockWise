@@ -2,9 +2,9 @@
 {
     public class Servico
     {
-        public int Id { get; set; }
+        public int IdServico { get; set; }
         public string Nome { get; set; }
-        public int FornecedorId { get; set; }
+        public int IDFornecedor { get; set; }
         public Fornecedor Fornecedor { get; set; }
         public string Descricao { get; set; }
         public decimal Preco { get; set; }

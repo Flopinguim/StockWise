@@ -3,7 +3,7 @@
     public class EntradaProduto
     {
         public int IdEntradaProduto { get; set; }
-        public int OrdemCompraId { get; set; }
+        public int IdOrdemCompra { get; set; }
         public OrdemCompra OrdemCompra { get; set; }
         public string NotaFiscal { get; set; }
         public int Quantidade { get; set; }
